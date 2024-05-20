@@ -1,12 +1,13 @@
-package org.example.agarioserver;
+package org.example.agarioserver.AgarioPackets;
 
 import javafx.geometry.Point2D;
 import javafx.scene.paint.Color;
+import org.example.agarioserver.Utility;
 
 import java.io.Serializable;
 
 public class FoodPacket implements Serializable {
-    String entityId;
+    public String entityId;
     public double x;
     public double y;
     public double colorR;

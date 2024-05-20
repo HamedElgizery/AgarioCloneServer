@@ -27,12 +27,4 @@ public final class Utility {
     public static Point2D getRandomPosition() {
         return new Point2D(rng.nextInt(AgarioServerApp.MAP_WIDTH), rng.nextInt(AgarioServerApp.MAP_HEIGHT));
     }
-    public static double calculateZoom(double radius) {
-        double logMinZoom = Math.log(minZoom);
-        double logMaxZoom = Math.log(maxZoom);
-
-        double logZoom = logMaxZoom - (logMaxZoom-logMinZoom)*radius / (2000-1);
-//        return (32 - Math.log(radius) / Math.log(2)) / 32;
-        return Math.exp(logZoom);
-    }
 }
