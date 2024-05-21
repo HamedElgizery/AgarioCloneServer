@@ -3,6 +3,7 @@ package org.example.agarioserver;
 import com.esotericsoftware.kryonet.Connection;
 import com.esotericsoftware.kryonet.Listener;
 import com.esotericsoftware.kryonet.Server;
+
 import org.example.agarioserver.AgarioEvents.DeadPlayerEvent;
 import org.example.agarioserver.AgarioEvents.EatenFoodEvent;
 import org.example.agarioserver.AgarioPackets.FoodPacket;
@@ -10,7 +11,6 @@ import org.example.agarioserver.AgarioPackets.PlayerStatusPacket;
 import org.example.agarioserver.AgarioRequests.FoodRequest;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.Executors;
